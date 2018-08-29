@@ -40,7 +40,7 @@
     
     
       
-        <title>About - Open Research Bases</title>
+        <title>Bases - Open Research Bases</title>
       
     
     
@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#about" tabindex="1" class="md-skip">
+      <a href="#open-bases" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -130,7 +130,7 @@
                 Open Research Bases
               </span>
               <span class="md-header-nav__topic">
-                About
+                Bases
               </span>
             
           
@@ -257,18 +257,6 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../bases/" title="Bases" class="md-nav__link">
-      Bases
-    </a>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
@@ -280,11 +268,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        About
+        Bases
       </label>
     
-    <a href="./" title="About" class="md-nav__link md-nav__link--active">
-      About
+    <a href="./" title="Bases" class="md-nav__link md-nav__link--active">
+      Bases
     </a>
     
       
@@ -298,22 +286,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-would-i-want-to-use-open-bases" title="Why would I want to use open bases?" class="md-nav__link">
-    Why would I want to use open bases?
+  <a href="#templates" title="Templates" class="md-nav__link">
+    Templates
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#journal-of-open-research-software" title="Journal of Open Research Software" class="md-nav__link">
-    Journal of Open Research Software
+  <a href="#components" title="Components" class="md-nav__link">
+    Components
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#your-current-choices" title="Your Current Choices" class="md-nav__link">
-    Your Current Choices
+  <a href="#experiment-templates" title="Experiment Templates" class="md-nav__link">
+    Experiment Templates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-robots" title="Testing Robots" class="md-nav__link">
+    Testing Robots
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reproducible-deployments-and-data-archive" title="Reproducible Deployments and Data Archive" class="md-nav__link">
+    Reproducible Deployments and Data Archive
   </a>
   
 </li>
@@ -326,6 +328,18 @@
   
 </nav>
     
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../about/" title="About" class="md-nav__link">
+      About
+    </a>
   </li>
 
     
@@ -350,22 +364,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-would-i-want-to-use-open-bases" title="Why would I want to use open bases?" class="md-nav__link">
-    Why would I want to use open bases?
+  <a href="#templates" title="Templates" class="md-nav__link">
+    Templates
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#journal-of-open-research-software" title="Journal of Open Research Software" class="md-nav__link">
-    Journal of Open Research Software
+  <a href="#components" title="Components" class="md-nav__link">
+    Components
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#your-current-choices" title="Your Current Choices" class="md-nav__link">
-    Your Current Choices
+  <a href="#experiment-templates" title="Experiment Templates" class="md-nav__link">
+    Experiment Templates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-robots" title="Testing Robots" class="md-nav__link">
+    Testing Robots
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reproducible-deployments-and-data-archive" title="Reproducible Deployments and Data Archive" class="md-nav__link">
+    Reproducible Deployments and Data Archive
   </a>
   
 </li>
@@ -386,47 +414,118 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/openbases/openbases.github.io/edit/master/docs/about.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/openbases/openbases.github.io/edit/master/docs/bases.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h1>
-<p>OpenBases is a collaboration between several open source projects that are geared toward 
-making creation, testing, distribution, and publication of reproducible experiments 
-easier.</p>
-<h2 id="why-would-i-want-to-use-open-bases">Why would I want to use open bases?<a class="headerlink" href="#why-would-i-want-to-use-open-bases" title="Permanent link">&para;</a></h2>
-<p>The open bases templates plug easily into the tools that you are already familiar with and
-using (for example, Github) and guide you through traditionally challenging parts
-of practicing reproducible science. For example, it's common to implemenent these
-components for your work, separately and assemble them for a final product:</p>
-<ul>
-<li><strong>development</strong> of an experiment usually means learning a web-based technology, and writing code to run some protocol and collect data.</li>
-<li><strong>build</strong> steps, in a modern sense, comes down to using a reproducible container to capture all software and library dependencies for your software.</li>
-<li><strong>version control</strong> is using a service like Github to ensure that you can both collaborate and keep a record of your work.</li>
-<li><strong>testing</strong> of your procedure is imperative, but not commonly done as it is an extra step</li>
-<li><strong>publication</strong> means capturing all previous steps and methods into a product that is both human consumable and can replicate the work.</li>
-</ul>
-<p>Instead of needing to implement all of the above separately, the Open Bases 
-give you Github repos that are ready to go, with minimal additional work needed to
-satisfy the same pipeline:</p>
-<div class="codehilite"><pre><span></span>develop --&gt; <span class="nb">test</span> --&gt; build --&gt; deploy --&gt; publish
+                <h1 id="open-bases">Open Bases<a class="headerlink" href="#open-bases" title="Permanent link">&para;</a></h1>
+<h2 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">&para;</a></h2>
+<p>Each of the following is a builder template, typically including all steps to:</p>
+<div class="codehilite"><pre><span></span>develop --&gt; version control --&gt; build --&gt; test --&gt; deploy --&gt; publish
 </pre></div>
 
 
-<p>The bases are intended for researchers, academics, and software developers alike.
-All templates are geared toward publication in the <strong>Journal of Open Research Software.</strong></p>
-<h2 id="journal-of-open-research-software">Journal of Open Research Software<a class="headerlink" href="#journal-of-open-research-software" title="Permanent link">&para;</a></h2>
-<p>If you are visiting this site, you are likely a <strong>(1) Researcher</strong>, <strong>(2) Academic</strong>, and/or <strong>(3) Software Developer</strong>.  Here are your stories:</p>
-<ul>
-<li>As a Researcher, I want a place where I can go to find software for running commonly-used cognitive or behavioral paradigms on the web. I want this software to be tested, validated, and peer-reviewed.</li>
-<li>As a Researcher, I want a place where I can go to find (anonymized) data from experiments that have been run with this software, so I can cross-validate / diagnose / troubleshoot when I use the software myself.</li>
-<li>As a Software Developer, I want a place where I can publish new experiment software that I have created for researchers to use.</li>
-<li>As an Academic, I want a place where I can publish (anonymized) data and results / analyses from studies to validate or norm new experiment software.</li>
-</ul>
-<h2 id="your-current-choices">Your Current Choices<a class="headerlink" href="#your-current-choices" title="Permanent link">&para;</a></h2>
-<p>You are likely familiar with two kinds of places to publish software: </p>
-<p><strong>(1) Traditional journals that review/publish research and theory papers.</strong> Embedded within these traditional-journal papers are methods sections that describe any software used, if applicable, and it is the rare savvy researcher who links/cites the software. But reproducing the software used in a traditional-journal experiment is often a massive undertaking of reverse-engineering with a lot of room for error. This is a problem for reproducibility, not to mention how much it may slow down scientific progress.</p>
-<p><strong>(2) JOSS, the Journal of Open Source Software</strong>, reviews / publishes research software, with an exclusive focus on software to the exclusion of research / analyses. </p>
-<p>Missing is an option <strong>(3) A journal that reviews / publishes software for running qualitative / quantitative experiments</strong>, which reviews both the software and the research to test the software. (Think: Software for paradigms like the Stroop, N-Back, Flanker, IAT.)</p>
+<div class="admonition info">
+<p class="admonition-title">Labjs Builder</p>
+<p>Build your experiment with the LabJS builder interface, and export it into a Github 
+repository that is ready to be connected to CircleCI and Docker Hub to build, deploy, 
+and publish your experiment in the Journal of Open Research Experiments.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">JsPsych Builder</p>
+<p>Build your experiment with the JsPsych builder interface, and export it into a Github 
+repository that is ready to be connected to CircleCI and Docker Hub to build, deploy, 
+and publish your experiment in the Journal of Open Research Experiments.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Expfactory Builder</p>
+<p>Start with an experiment from the Experiment Factory Library, and add it to a Github
+repository to connect to CircleCI and Docker Hub to build, deploy, 
+and publish your experiment in the Journal of Open Research Experiments.</p>
+</div>
+<hr>
+
+<h2 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h2>
+<h2 id="experiment-templates">Experiment Templates<a class="headerlink" href="#experiment-templates" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Repository</th>
+<th>Documentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LabJS</td>
+<td>https://github.com/FelixHenninger/lab.js</td>
+<td>https://labjs.readthedocs.io</td>
+</tr>
+<tr>
+<td>JSPsych</td>
+<td>https://github.com/jspsych/jsPsych</td>
+<td>https://www.jspsych.org/</td>
+</tr>
+<tr>
+<td>Experiment Factory Library</td>
+<td>https://expfactory.github.io/experiments</td>
+<td>https://expfactory.github.io/generate</td>
+</tr>
+<tr>
+<td>Survey Builder</td>
+<td>https://github.com/expfactory/survey-generator</td>
+<td>https://expfactory.github.io/integration-surveys</td>
+</tr>
+</tbody>
+</table>
+<h2 id="testing-robots">Testing Robots<a class="headerlink" href="#testing-robots" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Repository</th>
+<th>Documentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Expfactory Robots</td>
+<td>https://github.com/expfactory/expfactory-robots</td>
+<td>https://expfactory.github.io/integration-robots</td>
+</tr>
+<tr>
+<td>JoSS Robot</td>
+<td>TBA</td>
+<td>TBA</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reproducible-deployments-and-data-archive">Reproducible Deployments and Data Archive<a class="headerlink" href="#reproducible-deployments-and-data-archive" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Repository</th>
+<th>Documentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Docker Hub</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Github Pages</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Kaggle</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
@@ -447,7 +546,7 @@ All templates are geared toward publication in the <strong>Journal of Open Resea
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../bases/" title="Bases" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -456,11 +555,25 @@ All templates are geared toward publication in the <strong>Journal of Open Resea
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Bases
+                Home
               </span>
             </div>
           </a>
         
+        
+          <a href="../about/" title="About" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                About
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
