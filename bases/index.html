@@ -286,6 +286,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#definitions" title="Definitions" class="md-nav__link">
+    Definitions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#templates" title="Templates" class="md-nav__link">
     Templates
   </a>
@@ -295,6 +302,13 @@
         <li class="md-nav__item">
   <a href="#components" title="Components" class="md-nav__link">
     Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#libraries" title="Libraries" class="md-nav__link">
+    Libraries
   </a>
   
 </li>
@@ -371,6 +385,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#definitions" title="Definitions" class="md-nav__link">
+    Definitions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#templates" title="Templates" class="md-nav__link">
     Templates
   </a>
@@ -380,6 +401,13 @@
         <li class="md-nav__item">
   <a href="#components" title="Components" class="md-nav__link">
     Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#libraries" title="Libraries" class="md-nav__link">
+    Libraries
   </a>
   
 </li>
@@ -434,11 +462,27 @@
                 <h1 id="open-bases">Open Bases<a class="headerlink" href="#open-bases" title="Permanent link">&para;</a></h1>
 <p>An open base template is a combination of components, including experiment
 templates, testing tools, and deployment options to produce a full development
-through publication reproducible workflow.</p>
-<div class="codehilite"><pre><span></span>develop --&gt; version control --&gt; build --&gt; test --&gt; deploy --&gt; publish
+through publication reproducible workflow. A high level might look like this:</p>
+<div class="codehilite"><pre><span></span>develop --&gt; version control --&gt; build --&gt; test --&gt; deploy --&gt; submission
 </pre></div>
 
 
+<p>Given that you have a contribution, meaning something you are developing like
+an experiment, and your goal is submission, coinciding with a set of
+steps that get you from the start of your work to a tested, version controlled,
+reproducible submission, that's the job of the open bases.</p>
+<h2 id="definitions">Definitions<a class="headerlink" href="#definitions" title="Permanent link">&para;</a></h2>
+<p>You will most likely be interested to grab a <a href="#template">Template</a> that is a combination
+of components that fit your needs based on a desired submission and inputs to it. A template
+is ready to go to have you "plug in" your stuff. The <a href="#components">Components</a> 
+described below are the guts of the templates, such as the experiment software,
+testing containers, or similar. Template and/or components can be tagged easily
+with categories to give them a nice summary, and a "quick glance" understanding
+when installed in a Github repository. Here we will discuss
+definitions to help you better understand the bases.</p>
+<ul>
+<li><strong>submission</strong>: typically consists of a set of steps (components)</li>
+</ul>
 <h2 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">&para;</a></h2>
 <p>Each of the following is a builder template, typically including all steps to
 help you with development through deployment and publication.</p>
@@ -463,7 +507,7 @@ and publish your experiment in the Journal of Open Research Experiments.</p>
 <hr>
 
 <h2 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h2>
-<h2 id="experiment-templates">Experiment Templates<a class="headerlink" href="#experiment-templates" title="Permanent link">&para;</a></h2>
+<h2 id="libraries">Libraries<a class="headerlink" href="#libraries" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -484,6 +528,23 @@ and publish your experiment in the Journal of Open Research Experiments.</p>
 <td><a href="https://www.jspsych.org/">https://www.jspsych.org/</a></td>
 </tr>
 <tr>
+<td>Expfactory</td>
+<td><a href="https://github.com/expfactory/expfactory">expfactory/expfactory</a></td>
+<td><a href="https://expfactory.github.io/">Github Docs</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="experiment-templates">Experiment Templates<a class="headerlink" href="#experiment-templates" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Repository</th>
+<th>Documentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td>Experiment Factory Library</td>
 <td><a href="https://expfactory.github.io/experiments">https://expfactory.github.io/experiments</a></td>
 <td><a href="https://expfactory.github.io/generate">https://expfactory.github.io/generate</a></td>
@@ -491,7 +552,7 @@ and publish your experiment in the Journal of Open Research Experiments.</p>
 <tr>
 <td>Survey Builder</td>
 <td><a href="https://github.com/expfactory/survey-generator">expfactory/survey-generator</a></td>
-<td><a href="https://expfactory.github.io/integration-surveys">https://expfactory.github.io/integration-surveys</a></td>
+<td><a href="https://expfactory.github.io/integration-surveys">Github Docs</a></td>
 </tr>
 </tbody>
 </table>
@@ -528,7 +589,7 @@ and publish your experiment in the Journal of Open Research Experiments.</p>
 <td>Whedon Docker</td>
 <td><a href="https://www.github.com/openbases/whedon">openbases/whedon</a></td>
 <td>Dockerized Whedon and Python Helpers</td>
-<td><a href="https://www.github.com/openbases/whedon">Github Docs</a></td>
+<td><a href="https://www.github.com/openbases/whedon">Github Docs</a> and <a href="https://openbases.github.io/whedon/">Manifests</a></td>
 </tr>
 </tbody>
 </table>
