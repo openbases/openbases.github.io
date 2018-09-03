@@ -290,12 +290,45 @@
     Definitions
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-types" title="Base Types" class="md-nav__link">
+    Base Types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#templates" title="Templates" class="md-nav__link">
     Templates
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#builders" title="Builders" class="md-nav__link">
+    Builders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submission" title="Submission" class="md-nav__link">
+    Submission
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -304,40 +337,46 @@
     Components
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#libraries" title="Libraries" class="md-nav__link">
     Libraries
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#experiment-templates" title="Experiment Templates" class="md-nav__link">
     Experiment Templates
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#robots" title="Robots" class="md-nav__link">
-    Robots
+        
+          <li class="md-nav__item">
+  <a href="#testing" title="Testing" class="md-nav__link">
+    Testing
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#documentation" title="Documentation" class="md-nav__link">
     Documentation
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#reproducible-deployments-and-data-archive" title="Reproducible Deployments and Data Archive" class="md-nav__link">
-    Reproducible Deployments and Data Archive
+        
+          <li class="md-nav__item">
+  <a href="#data-archive" title="Data Archive" class="md-nav__link">
+    Data Archive
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -389,12 +428,45 @@
     Definitions
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-types" title="Base Types" class="md-nav__link">
+    Base Types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#templates" title="Templates" class="md-nav__link">
     Templates
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#builders" title="Builders" class="md-nav__link">
+    Builders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submission" title="Submission" class="md-nav__link">
+    Submission
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -403,40 +475,46 @@
     Components
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#libraries" title="Libraries" class="md-nav__link">
     Libraries
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#experiment-templates" title="Experiment Templates" class="md-nav__link">
     Experiment Templates
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#robots" title="Robots" class="md-nav__link">
-    Robots
+        
+          <li class="md-nav__item">
+  <a href="#testing" title="Testing" class="md-nav__link">
+    Testing
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#documentation" title="Documentation" class="md-nav__link">
     Documentation
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#reproducible-deployments-and-data-archive" title="Reproducible Deployments and Data Archive" class="md-nav__link">
-    Reproducible Deployments and Data Archive
+        
+          <li class="md-nav__item">
+  <a href="#data-archive" title="Data Archive" class="md-nav__link">
+    Data Archive
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -480,12 +558,25 @@ testing containers, or similar. Template and/or components can be tagged easily
 with categories to give them a nice summary, and a "quick glance" understanding
 when installed in a Github repository. Here we will discuss
 definitions to help you better understand the bases.</p>
+<h3 id="base-types">Base Types<a class="headerlink" href="#base-types" title="Permanent link">&para;</a></h3>
+<p>These base types can coincide with either a full <a href="#Template">Template</a> or a
+<a href="#Component">Component</a> to make them up. They are tags to describe what the base is or does,
+and you might see them as the prefix for Github repository names (e.g. <code>experiment-stroop</code>)
+or as badges in a template repository to describe the content.</p>
 <ul>
-<li><strong>submission</strong>: typically consists of a set of steps (components)</li>
+<li><strong>submission</strong>: typically consists of a set of steps (components) that get you from something you are developing to a programmatic paper submission. This might mean generating a container for your content, running an analysis, and then testing and submitting data and/or a manuscript.</li>
+<li><strong>builder</strong>: is all steps up until a submission. You might want to create an experiment, deploy a container to Github pages and documentation to Github Pages, but not submit to a journal</li>
+<li><strong>paper</strong>: refers to something like a PDF or other rendered content that might be used in a submission. Examples are PDFs, markdown content, or articles.</li>
+<li><strong>experiment</strong>: typically refers to a web based experiment, meaning some static content that can be dropped on a web server to collect data.</li>
+<li><strong>openbases</strong>: is a special base type for any kind of template that is for open bases developers. For examples, the <a href="https://www.github.com/openbases/openbases-jekyll-theme">openbases-jekyll-theme</a> can be easily dropped in a Github "docs" folder to render documentation for a new component repository.</li>
+<li><strong>testing</strong>: is functions or software for continuous integration (or similar) testing purposes. For example, for experiments, we have robots to test static and runtime web-based experiments.</li>
+<li><strong>library</strong>: refers to software used within a base, such as LabJS or JSPsych for an experiment. These categories are shown here and used as tags, but aren't common to be found as openbases repositories. They are commonly other open source software.</li>
+<li><strong>data</strong>: are components to help with archive of data.</li>
 </ul>
 <h2 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">&para;</a></h2>
+<h3 id="builders">Builders<a class="headerlink" href="#builders" title="Permanent link">&para;</a></h3>
 <p>Each of the following is a builder template, typically including all steps to
-help you with development through deployment and publication.</p>
+help you with development through deployment without publication.</p>
 <div class="admonition info">
 <p class="admonition-title">Labjs Builder</p>
 <p>Build your experiment with the LabJS builder interface, and export it into a Github 
@@ -506,8 +597,13 @@ and publish your experiment in the Journal of Open Research Experiments.</p>
 </div>
 <hr>
 
+<h3 id="submission">Submission<a class="headerlink" href="#submission" title="Permanent link">&para;</a></h3>
+<p>Each of the following is a builder template, typically including all steps to
+help you with development through deployment and publication.</p>
+<hr>
+
 <h2 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h2>
-<h2 id="libraries">Libraries<a class="headerlink" href="#libraries" title="Permanent link">&para;</a></h2>
+<h3 id="libraries">Libraries<a class="headerlink" href="#libraries" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -534,7 +630,7 @@ and publish your experiment in the Journal of Open Research Experiments.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="experiment-templates">Experiment Templates<a class="headerlink" href="#experiment-templates" title="Permanent link">&para;</a></h2>
+<h3 id="experiment-templates">Experiment Templates<a class="headerlink" href="#experiment-templates" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -556,7 +652,7 @@ and publish your experiment in the Journal of Open Research Experiments.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="robots">Robots<a class="headerlink" href="#robots" title="Permanent link">&para;</a></h2>
+<h3 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -593,7 +689,7 @@ and publish your experiment in the Journal of Open Research Experiments.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
+<h3 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -610,7 +706,7 @@ and publish your experiment in the Journal of Open Research Experiments.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="reproducible-deployments-and-data-archive">Reproducible Deployments and Data Archive<a class="headerlink" href="#reproducible-deployments-and-data-archive" title="Permanent link">&para;</a></h2>
+<h3 id="data-archive">Data Archive<a class="headerlink" href="#data-archive" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
