@@ -563,42 +563,63 @@ definitions to help you better understand the bases.</p>
 <a href="#Component">Component</a> to make them up. They are tags to describe what the base is or does,
 and you might see them as the prefix for Github repository names (e.g. <code>experiment-stroop</code>)
 or as badges in a template repository to describe the content.</p>
-<ul>
-<li><strong>submission</strong>: typically consists of a set of steps (components) that get you from something you are developing to a programmatic paper submission. This might mean generating a container for your content, running an analysis, and then testing and submitting data and/or a manuscript.</li>
-<li><strong>builder</strong>: is all steps up until a submission. You might want to create an experiment, deploy a container to Github pages and documentation to Github Pages, but not submit to a journal</li>
-<li><strong>paper</strong>: refers to something like a PDF or other rendered content that might be used in a submission. Examples are PDFs, markdown content, or articles.</li>
-<li><strong>experiment</strong>: typically refers to a web based experiment, meaning some static content that can be dropped on a web server to collect data.</li>
-<li><strong>openbases</strong>: is a special base type for any kind of template that is for open bases developers. For examples, the <a href="https://www.github.com/openbases/openbases-jekyll-theme">openbases-jekyll-theme</a> can be easily dropped in a Github "docs" folder to render documentation for a new component repository.</li>
-<li><strong>testing</strong>: is functions or software for continuous integration (or similar) testing purposes. For example, for experiments, we have robots to test static and runtime web-based experiments.</li>
-<li><strong>library</strong>: refers to software used within a base, such as LabJS or JSPsych for an experiment. These categories are shown here and used as tags, but aren't common to be found as openbases repositories. They are commonly other open source software.</li>
-<li><strong>data</strong>: are components to help with archive of data.</li>
-</ul>
+<div class="admonition info">
+<p class="admonition-title">Submission</p>
+<p>typically consists of a set of steps (components) that get you from something you are developing to a programmatic paper submission. This might mean generating a container for your content, running an analysis, and then testing and submitting data and/or a manuscript.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Builder</p>
+<p>is a tool optimized for the build step. You might want to create an experiment, deploy a container to Github pages and documentation to Github Pages, but not submit to a journal.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Paper</p>
+<p>refers to something like a PDF or other rendered content that might be used in a submission. Examples are PDFs, markdown content, or articles.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Experiment</p>
+<p>typically refers to a web based experiment, meaning some static content that can be dropped on a web server to collect data.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">openbases</p>
+<p>a special base type for any kind of template that is for open bases developers. For examples, the <a href="https://www.github.com/openbases/openbases-jekyll-theme">openbases-jekyll-theme</a> can be easily dropped in a Github "docs" folder to render documentation for a new component repository.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Testing</p>
+<p>functions or software for continuous integration (or similar) testing purposes. For example, for experiments, we have robots to test static and runtime web-based experiments.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Library</p>
+<p>refers to software used within a base, such as LabJS or JSPsych for an experiment. These categories are shown here and used as tags, but aren't common to be found as openbases repositories. They are commonly other open source software.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Data</p>
+<p>are components to help with archive of data.</p>
+</div>
 <h2 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">&para;</a></h2>
 <h3 id="builders">Builders<a class="headerlink" href="#builders" title="Permanent link">&para;</a></h3>
 <p>Each of the following is a builder template, typically including all steps to
-help you with development through deployment without publication.</p>
-<div class="admonition info">
-<p class="admonition-title">Labjs Builder</p>
-<p>Build your experiment with the LabJS builder interface, and export it into a Github 
-repository that is ready to be connected to CircleCI and Docker Hub to build, deploy, 
-and publish your experiment in the Journal of Open Research Experiments.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">JsPsych Builder</p>
-<p>Build your experiment with the JsPsych builder interface, and export it into a Github 
-repository that is ready to be connected to CircleCI and Docker Hub to build, deploy, 
-and publish your experiment in the Journal of Open Research Experiments.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Expfactory Builder</p>
-<p>Start with an experiment from the Experiment Factory Library, and add it to a Github
-repository to connect to CircleCI and Docker Hub to build, deploy, 
-and publish your experiment in the Journal of Open Research Experiments.</p>
-</div>
+help you with development through deployment. These builders might assist with
+generating a submission, but aren't intended for it.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Repository</th>
+<th>Documentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Builder Whedon</td>
+<td><a href="https://www.github.com/openbases/builder-whedon">openbases/builder-whedon</a></td>
+<td>JosS Paper Builder Robot</td>
+</tr>
+</tbody>
+</table>
 <hr>
 
 <h3 id="submission">Submission<a class="headerlink" href="#submission" title="Permanent link">&para;</a></h3>
-<p>Each of the following is a builder template, typically including all steps to
+<p>Each of the following is a submission template, typically including all steps to
 help you with development through deployment and publication.</p>
 <hr>
 
@@ -627,6 +648,11 @@ help you with development through deployment and publication.</p>
 <td>Expfactory</td>
 <td><a href="https://github.com/expfactory/expfactory">expfactory/expfactory</a></td>
 <td><a href="https://expfactory.github.io/">Github Docs</a></td>
+</tr>
+<tr>
+<td>Whedon</td>
+<td><a href="https://github.com/openjournals/whedon">openjournals/whedon</a></td>
+<td><a href="https://www.github.com/openjournals/whedon">Github docs</a></td>
 </tr>
 </tbody>
 </table>
@@ -668,12 +694,6 @@ help you with development through deployment and publication.</p>
 <td><a href="https://github.com/expfactory/expfactory-robots">expfactory/expfactory-robots</a></td>
 <td>Automated web browser</td>
 <td><a href="https://expfactory.github.io/integration-robots">Github Docs</a></td>
-</tr>
-<tr>
-<td>Whedon</td>
-<td><a href="https://www.github.com/openbases/whedon">openbases/whedon</a></td>
-<td>JosS Github Helper Robot</td>
-<td><a href="https://www.github.com/openbases/whedon">Github Docs</a></td>
 </tr>
 <tr>
 <td>Whedon Python</td>
