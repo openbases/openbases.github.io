@@ -294,8 +294,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#builder" title="Builder" class="md-nav__link">
-    Builder
+  <a href="#paper" title="Paper" class="md-nav__link">
+    Paper
   </a>
   
 </li>
@@ -303,13 +303,6 @@
           <li class="md-nav__item">
   <a href="#submission" title="Submission" class="md-nav__link">
     Submission
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#paper" title="Paper" class="md-nav__link">
-    Paper
   </a>
   
 </li>
@@ -419,8 +412,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#builder" title="Builder" class="md-nav__link">
-    Builder
+  <a href="#paper" title="Paper" class="md-nav__link">
+    Paper
   </a>
   
 </li>
@@ -428,13 +421,6 @@
           <li class="md-nav__item">
   <a href="#submission" title="Submission" class="md-nav__link">
     Submission
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#paper" title="Paper" class="md-nav__link">
-    Paper
   </a>
   
 </li>
@@ -514,7 +500,7 @@
                 <h1 id="open-bases">Open Bases<a class="headerlink" href="#open-bases" title="Permanent link">&para;</a></h1>
 <p>An open base template is a combination of components, including experiment
 templates, testing tools, and deployment options to produce a partial or full 
- reproducible workflow. A high level might look like this:</p>
+reproducible workflow. A high level might look like this:</p>
 <div class="codehilite"><pre><span></span>develop --&gt; version control --&gt; build --&gt; test --&gt; deploy --&gt; submission
 </pre></div>
 
@@ -524,39 +510,34 @@ an experiment, and your goal is submission, coinciding with a set of
 steps that get you from the start of your work to a tested, version controlled,
 reproducible submission, that's the job of the open bases. An open base can also
 be as simple as sharing a rendered paper pdf in a Github repository programmatically.</p>
+<div class="admonition info">
+<p class="admonition-title">How do I know what base to use?</p>
+<p>The easiest thing to do is read the description of the base type, and then
+follow the Github Link and look at the content in the repository and Github
+Pages. If you think "That's what I'd like to have for my repository!" then
+you've found a match, and can proceed following the instructions in the 
+README.md provided by the repository.</p>
+</div>
 <h2 id="base-types">Base Types<a class="headerlink" href="#base-types" title="Permanent link">&para;</a></h2>
 <p>These base types can coincide with either a full template to achieve some goal, or a
 component that is a step within. The groupings below are tags to describe what the base is or does,
 and you might see them as the prefix for Github repository names (e.g. <code>experiment-stroop</code>)
 or as badges in a template repository to describe the content.</p>
-<h3 id="builder">Builder<a class="headerlink" href="#builder" title="Permanent link">&para;</a></h3>
-<p>Each of the following is a builder template, typically including all steps to
-help you with development through deployment. These builders might assist with
-generating a submission, but may not be intended for it.</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Repository</th>
-<th>Documentation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Builder Whedon</td>
-<td><a href="https://www.github.com/openbases/builder-whedon">openbases/builder-whedon</a></td>
-<td>JosS Paper Builder Robot</td>
-</tr>
-</tbody>
-</table>
+<h3 id="paper">Paper<a class="headerlink" href="#paper" title="Permanent link">&para;</a></h3>
+<p>"Paper" refers to something like a PDF or other rendered content that might be 
+used in a submission. Examples are PDFs, markdown content, or articles.
+Each of the following is a paper builder template, typically including steps to
+generate and serve a manuscript or similar. These bases might assist with
+generating a submission, but may not be intended for it. You will want to use one
+of these bases if you want a PDF to build from a Github repository, and then render
+beautifully on Github Pages.</p>
+<p>| Name  | Repository | Description | Preview |
+| ----- | -----------|---------------|
+| Paper Whedon | <a href="https://www.github.com/openbases/paper-whedon">openbases/paper-whedon</a> | Generate PDF from markdown | <a href="https://openbases.github.io/paper-whedon">gh-pages</a> |</p>
 <hr>
 
 <h3 id="submission">Submission<a class="headerlink" href="#submission" title="Permanent link">&para;</a></h3>
 <p>Submission open bases typically consist of a set of steps (components) that get you from something you are developing to a programmatic paper submission. This might mean generating a container for your content, running an analysis, and then testing and submitting data and/or a manuscript.</p>
-<hr>
-
-<h3 id="paper">Paper<a class="headerlink" href="#paper" title="Permanent link">&para;</a></h3>
-<p>"Paper" refers to something like a PDF or other rendered content that might be used in a submission. Examples are PDFs, markdown content, or articles.</p>
 <hr>
 
 <h3 id="library">Library<a class="headerlink" href="#library" title="Permanent link">&para;</a></h3>
@@ -625,6 +606,7 @@ generating a submission, but may not be intended for it.</p>
 <thead>
 <tr>
 <th>Name</th>
+<th>Badge</th>
 <th>Repository</th>
 <th>Description</th>
 <th>Documentation</th>
@@ -633,18 +615,21 @@ generating a submission, but may not be intended for it.</p>
 <tbody>
 <tr>
 <td>Expfactory Robots</td>
+<td></td>
 <td><a href="https://github.com/expfactory/expfactory-robots">expfactory/expfactory-robots</a></td>
 <td>Automated web browser</td>
 <td><a href="https://expfactory.github.io/integration-robots">Github Docs</a></td>
 </tr>
 <tr>
 <td>Whedon Python</td>
+<td></td>
 <td><a href="https://www.github.com/openbases/whedon-python">openbases/whedon-python</a></td>
 <td>Helper functions for Whedon</td>
 <td><a href="https://openbases.github.io/whedon-python/">Github Docs</a></td>
 </tr>
 <tr>
 <td>Whedon Docker</td>
+<td></td>
 <td><a href="https://www.github.com/openbases/whedon">openbases/whedon</a></td>
 <td>Dockerized Whedon and Python Helpers</td>
 <td><a href="https://www.github.com/openbases/whedon">Github Docs</a> and <a href="https://openbases.github.io/whedon/">Manifests</a></td>
@@ -657,7 +642,7 @@ generating a submission, but may not be intended for it.</p>
 <hr>
 
 <h2 id="openbases">Openbases<a class="headerlink" href="#openbases" title="Permanent link">&para;</a></h2>
-<p>a special base type for any kind of template that is for open bases developers. For examples, the <a href="https://www.github.com/openbases/openbases-jekyll-theme">openbases-jekyll-theme</a> can be easily dropped in a Github "docs" folder to render documentation for a new component repository.</p>
+<p>A special base type for any kind of template that is for open bases developers. For examples, the <a href="https://www.github.com/openbases/openbases-jekyll-theme">openbases-jekyll-theme</a> can be easily dropped in a Github "docs" folder to render documentation for a new component repository, and <code>builder-whedon</code> is the builder for the actual <code>openbases/builder-whedon</code> container to drive other components.</p>
 <table>
 <thead>
 <tr>
@@ -668,9 +653,14 @@ generating a submission, but may not be intended for it.</p>
 </thead>
 <tbody>
 <tr>
+<td>Builder Whedon</td>
+<td><a href="https://www.github.com/openbases/builder-whedon">openbases/builder-whedon</a></td>
+<td>JosS Paper Builder Robot</td>
+</tr>
+<tr>
 <td>Open Bases Jekyll Theme</td>
 <td><a href="https://github.com/openbases/openbases-jekyll-theme">openbases/openbases-jekyll-theme</a></td>
-<td>Template for a "docs" folder for Github Pages</td>
+<td>"docs" folder for Github Pages</td>
 </tr>
 </tbody>
 </table>
